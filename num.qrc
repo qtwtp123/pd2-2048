@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/num">
+        <file>NUM/0.png</file>
+        <file>NUM/2.png</file>
+        <file>NUM/4.png</file>
+        <file>NUM/8.png</file>
+        <file>NUM/16.png</file>
+        <file>NUM/32.png</file>
+        <file>NUM/64.png</file>
+        <file>NUM/128.png</file>
+        <file>NUM/256.png</file>
+        <file>NUM/512.png</file>
+        <file>NUM/1024.png</file>
+        <file>NUM/2048.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>NUM/gameover.png</file>
+        <file>background.gif</file>
+    </qresource>
+</RCC>
