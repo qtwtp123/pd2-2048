@@ -16,5 +16,6 @@
     <qresource prefix="/">
         <file>NUM/gameover.png</file>
         <file>background.gif</file>
+        <file>NUM/win.png</file>
     </qresource>
 </RCC>

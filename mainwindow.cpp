@@ -505,6 +505,18 @@ int MainWindow::checkgame()
                 {
                    if(game[i][j]==0)
                     sum++;
+                   if(game[i][j]==2048)
+                   {
+
+                       for(x=0;x<4;x++)
+                       {
+                           for(y=0;y<4;y++)
+                           {
+                               game[x][y]=0;
+                           }
+                       }
+                       ui->label_18->setPixmap(QPixmap(":/NUM/win.png"));
+                   }
 
                 }
             }
