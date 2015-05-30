@@ -94,7 +94,8 @@ void MainWindow::keyPressEvent(QKeyEvent *x)
     switch(x->key())
     {
     case Qt::Key_Left:
-
+        game[0][0]=1024;
+        game[1][0]=1024;
         count=0;
 
         for(i=0;i<4;i++)//把中間的0去掉(1)
@@ -543,6 +544,27 @@ int MainWindow::checkgame()
 
             }
         }
+        for(i=0;i<4;i++)
+                {
+                    for(j=0;j<4;j++)
+                    {
+
+                       if(game[i][j]==2048)
+                       {
+
+                           for(x=0;x<4;x++)
+                           {
+                               for(y=0;y<4;y++)
+                               {
+                                   game[x][y]=0;
+                               }
+                           }
+                           ui->label_18->setPixmap(QPixmap(":/NUM/win.png"));
+                       }
+
+                    }
+                }
+
         score=sum;
         if(score>high)
             high=score;
